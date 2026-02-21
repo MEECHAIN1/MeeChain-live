@@ -22,9 +22,10 @@ externalPort = 3001
 PORT = "5000"
 
 [deployment]
-deploymentTarget = "static"
+deploymentTarget = "cloudrun"
 build = ["npm", "run", "build"]
 publicDir = "dist/public"
+run = ["sh", "-c", "npm run preview"]
 
 [workflows]
 runButton = "Project"

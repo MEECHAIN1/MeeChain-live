@@ -1,13 +1,10 @@
-
 import React from 'react';
-import { useApp } from '../context/AppState';
+import { useApp } from '../context/AppContext';
 
 const GlobalLoadingOverlay: React.FC = () => {
   const { state } = useApp();
-  const { staking, claiming, general } = state.loadingStates;
-  
-  // แสดงผลเฉพาะเมื่อมีการทำธุรกรรมสำคัญเท่านั้น
-  const active = staking || claiming || general;
+  // Simplified for mockup
+  const active = state.isLoading;
 
   if (!active) return null;
 
@@ -23,7 +20,7 @@ const GlobalLoadingOverlay: React.FC = () => {
         </div>
         <div className="space-y-3">
           <h3 className="text-2xl font-black italic uppercase tracking-[0.2em] text-white">
-            {staking ? 'Channeling Energy' : claiming ? 'Harvesting Assets' : 'Processing Ritual'}
+            Processing Ritual
           </h3>
           <p className="text-[10px] font-black uppercase tracking-[0.5em] text-amber-500 animate-pulse">
             Waiting for Ledger Verification...

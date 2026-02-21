@@ -10,6 +10,9 @@ import SwapPage from './pages/SwapPage';
 import SummonPage from './pages/SummonPage';
 import MintPage from './pages/MintPage';
 import OraclePage from './pages/OraclePage';
+import GlobalLoadingOverlay from './components/GlobalLoadingOverlay';
+import RitualToasts from './components/RitualToasts';
+import NetworkBanner from './components/NetworkBanner';
 
 function Router() {
   return (
@@ -35,6 +38,9 @@ const App: React.FC = () => {
     <AppProvider>
       <div className="bg-ritual"></div>
       <div className="min-h-screen flex flex-col selection:bg-amber-500/30 relative pb-safe text-white">
+        <GlobalLoadingOverlay />
+        <RitualToasts />
+        <NetworkBanner />
         <Navbar />
         <main className="flex-grow max-w-7xl mx-auto w-full px-4 sm:px-6 py-6 md:py-10">
           <Router />

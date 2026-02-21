@@ -12,7 +12,7 @@ import { generateMeeBotName } from '../lib/meeBotNames';
 interface AppContextType {
   state: UserState;
   events: BlockchainEvent[];
-  connectWallet: (connector?: any) => Promise<void>;
+ // connectWallet: (connector?: any) => Promise<void>;
   disconnectWallet: () => void;
   refreshBalances: () => Promise<void>;
   addEvent: (event: Omit<BlockchainEvent, 'id' | 'timestamp'>) => void;
