@@ -1,17 +1,8 @@
-# ⚡ MeeChain MeeBot Protocol
+# ⚡ MeeChain.Network
 
-MeeChain MeeBot is a high-performance, mystical dashboard designed for the MeeChain ecosystem. It enables verified collective members to monitor telemetry, participate in staking rituals, and visualize their mechanical asset galleries.
+<img width="2048" height="1152" alt="1000185130" src="https://github.com/user-attachments/assets/d1db280c-b730-468d-9f93-7094b096d9df" />
 
----
-
-## 🔮 System Architecture
-
-- **Core:** Viem + React 19 + TypeScript + Tailwind CSS
-- **Blockchain Interface:** Public RPC client with resilient fallback nodes.
-- **State Management:** Zustand-inspired Context state for global account/balance/event tracking.
-- **Reliability:** Defensive coding with mock data fallbacks and BigInt-safe serialization.
-
----
+``MeeChain Network is a high-performance, mystical dashboard designed for the MeeChain ecosystem. It enables verified collective members to monitor telemetry, participate in staking rituals, and visualize their mechanical asset galleries.``
 
 ## 🚀 The Ritual of Initiation (Setup)
 
@@ -29,6 +20,10 @@ VITE_RPC_URL=http://127.0.0.1:8545
 VITE_NFT_ADDRESS=0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512
 VITE_TOKEN_ADDRESS=0x5FbDB2315678afecb367f032d93F642f64180aa3
 VITE_STAKING_ADDRESS=0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0
+VITE_MARKETPLACE_ADDRESS=0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9
+VITE_EXPLORER_URL=https://scan.meechain.io
+VITE_WALLETCONNECT_ID=b0d81328f8ab0541fdede7db9ff25cb1
+VITE_CHAIN_ID=1337
 ```
 
 ### 3. Channel the Local Stream
@@ -55,20 +50,6 @@ src/
     GalleryPage.tsx   # Mechanical Visualization
     EventLogPage.tsx  # The Eternal Ledger
 ```
-
----
-
-## 🧪 Verification Rituals (Testing)
-
-### Unit Testing
-Verify service integrity using mock providers:
-- `token.test.ts`: Balance retrieval & transfer logic.
-- `staking.test.ts`: Reward rate synthesis.
-
-### Integration Testing
-Ensure the UI responds correctly to contract events and wallet states using mock connectors.
-
----
 
 ## 🌐 Ascension (Deployment)
 
